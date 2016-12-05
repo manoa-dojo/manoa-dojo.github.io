@@ -56,7 +56,8 @@ a {
 .page-header {
   color: #fff;
   text-align: center;
-  background-image: url("../doc/art-building.JPG") center;}
+  background-image: url("../doc/art-building.JPG");
+  background-size: 100%;}
 
 @media screen and (min-width: 64em) {
   .page-header {

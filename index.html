@@ -23,12 +23,12 @@
   <h3>
     <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span
         aria-hidden="true" class="octicon octicon-link"></span></a>About Us</h3>
-  <p>    
+  <p>
     Welcome to the Manoa Dojo! <br>
     If you’ve ever taken a course by yourself (like I have), you know how hard it can be to learn all the material. Why
     not join a network of like-minded ICS students? All you need is your UH login to signup!
   </p>
-  
+
   <p>
     For each course, there are two types of users: grasshoppers and senseis. Grasshoppers represent the typical student
     users – ones that require help in their classes. Senseis are the student mentors whom have already taken the course.
@@ -43,17 +43,30 @@
                                                                                                   class="octicon octicon-link"></span></a>User Guide
   </h1>
 
-  <h2>Landing page</h2>
+  <h2>Video Tutorial</h2>
+  <iframe align="middle" width="800" height="500"
+          src="https://www.youtube.com/embed/rBJLqVq-a3k">
+  </iframe>
+
+  <p>To best understand how Manoa Dojo works, you watch the video above, follow the guided tour below, or both!</p>
+
+  <h2>Landing Page</h2>
   <ul>
-    <li>Students and staff can log in using their UH email accounts.</li>
+    <li>Students and staff can log in using their UH email accounts.  The about page in the top right hand corner has more information about Manoa Dojo's system.</li>
   </ul>
 
+  <h2>About Page</h2>
+  <ul>
+    <li>To summarize, there are two types of people in a study session: grasshoppers and senseis.  However, an individual user can be a grasshopper in one subject and a snesei in another.  Attending study sessions increases your belt ranks, much like an actual dojo.</li>
+  </ul>
 
+  <p>After you login, you will be redirected to your user home page.</p>
   <img src="/doc/landing-page2.jpg">
 
   <h2>User Home Page</h2>
   <ul>
     <li>User account homepage displays your upcoming study sections as well as sections you may be interested in.</li>
+    <li>When you first login, it's empty.  Let's go join a section!  Click the red "Join" button to join a study session.  This takes you to the Study Sections Page.</li>
     <li>You can also create your own sections from your homepage.</li>
   </ul>
   <img src="/doc/home-page.png">
@@ -64,45 +77,53 @@
     <li>This page shows additional information such as who created it, how many people are currently in it, and a
       description of the section.
     </li>
-    <li>You can also join a section from this page, so attenddent points will be awarded when the section ends.</li>
+    <li>You can like study sessions.  This will make them appear in your user home page and calendar.</li>
+    <li>You can also join a section from this page, so points will be awarded when the section ends.  You can only join a section when it is in session.  This redirects you to the chat room.</li>
   </ul>
   <img src="/doc/section-page.png">
 
+  <h2>Chat Room</h2>
+  <ul>
+    <li>You can talk with other users here about your professor, upcoming test, and whatnot.</li>
+  </ul>
+
+  <p>Let's go back and create our own study session.</p>
+
+  <h2>Create Study Session</h2>
+  <ul>
+    <li>Enter all the information about your upcoming study session, like the time, date, subject, and where to meet.  If you've done it correctly, it should popup in your home page</li>
+  </ul>
+
+  <p>Now, let's check out the calendar.</p>
 
   <h2>Calendar Page</h2>
   <ul>
-    <li>Shows your upcoming sections in a calandar view.</li>
+    <li>There should be two sections in your calendar: The section you liked and the section you've created.</li>
   </ul>
   <img src="/doc/calendar.png">
 
+  <p>Now, let's take a look at the leaderboard</p>
 
   <h2>Leaderboard Page</h2>
-  <ul>
-    <li>A leaderboard of users who have helped the most people.</li>
-    <li>Points are based on the # of sections you have created and # of people who attend.</li>
-  </ul>
   <img src="/doc/leaderboard.png">
 
-  <h2>Create Study Section Page</h2>
-  <ul>
-    <li>Form used to create a study section.</li>
-  </ul>
-  <img src="/doc/create-section.png">
-
+  <p>This is a leaderboard of the users that have attended and created the most sections this month.  When you complete a section, you each a point.  Points get you on the leaderboard, and a higher colored belt!</p>
+  <p>The last main feature is the user profile page.</p>
 
   <h2>User Profile Page</h2>
   <ul>
-    <li>On your person profile you can specify which subjects and classes you are a Senseiin , and which subjects you
-      are a Grasshopper in.
+    <li>On your profile you can specify which subjects and classes you are a sensei in, and which subjects you
+      are a grasshopper in.
     </li>
     <li>This page also gives you a place to say a little about yourself.</li>
+    <li>You can visit other profile pages by changing the URL.  FOr example, if I wanted to visit my friend, zhenfeng's profile, I would visit "http://manoa-dojo.meteorapp.com/profile/zhenfeng".</li>
   </ul>
   <img src="/doc/profile01.png">
   <img src="/doc/profile02.png">
   <img src="/doc/profile03.png">
 
   <h1>Initial User Study</h1>
-  <p>We recruited five junior to senior level University of Hawaii students to test our application.  Three of the five students have taken ICS courses, and the other two were engineering students.  Each student was given a link to the project page, without any knowledge of the application.  Their feedback was compiled and summarized into these main points:</p>
+  <p>We recruited five junior and senior level University of Hawaii students to test our application.  Three of the five students have taken ICS courses, and the other two were engineering students.  Each student was given a link to the project page, without any knowledge of the application.  Their feedback was compiled and summarized into these main points:</p>
   <ul>
     <li>Users liked the intuitive, simple design of the website</li>
     <li>Users liked the scrolling chat bar</li>
@@ -112,14 +133,14 @@
   <p>Overall, users like the website's design, but were confused and did not understand how to use the website.  Thus, we added additional textboxes and webpages to instruct the user from page to page.  All of the bugs were fixed.</p>
 
   <h1>Developer's Guide</h1>
-  <p><b>NOTE: If you have a UH account and want to login through the deployed galaxy webiste, but you are not part of the Fall 2016 section of ICS 314, contact us and we will approve your account for access.  If you really can't wait to try the app, follow the steps below:</b></p>
+  <p><b>NOTE: If you have a UH account and want to login through the deployed galaxy webiste, but you are not part of the Fall 2016 section of ICS 314, contact us and we will approve your account for access.  If you do not have a UH account, or are really excited to use the website, follow the steps below:</b></p>
   <ul>
-    <li>Before you download/clone/fork the repository from Github, make sure you have downloaded Meteor and Node.js.  You can visit Meteor's site <a href="https://www.meteor.com/#!">here, and  Node.js <a href="https://nodejs.org/en/download/">here.</a></li>
+    <li>Before you download/clone/fork the repository from Github, make sure you have downloaded Meteor and Node.js.  You can visit Meteor's site <a href="https://www.meteor.com/#!">here</a>, and  Node.js' <a href="https://nodejs.org/en/download/">here</a>.</li>
     <li>Download/Clone/Fork the repository from Github <a href="https://github.com/manoa-dojo/manoa-dojo">here</a> </li>
     <li>Add your UH username to the /config/settings.development.json file.</li>
     <li>To run the application, navigate to the /app folder and type "meteor --settings ../config/settings.development.json".  This will install all the packages you need.</li>
   </ul>
-  
+
    <h3>
     <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span
         aria-hidden="true" class="octicon octicon-link"></span></a>Contributors</h3>
